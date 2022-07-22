@@ -1,0 +1,80 @@
+---
+title: "El ABC de RMarkdown"
+author: "Erick Cuevas Fernández<br>01 de agosto de 2022"
+output:
+  xaringan::moon_reader:
+    css: ["cdsb2022.css"]
+    self_contained: false
+    seal: true
+    nature:
+      ratio: '16:9'
+      titleSlideClass: [center]
+      highlightLines: true
+---
+```{r xaringanExtra-clipboard, echo=FALSE}
+# No quitar! Es para que aparezca la opción copy code en los R chunks
+xaringanExtra::use_clipboard()
+```
+
+.pull-right[<br>
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("css/xolo.png")
+```
+]
+
+## Contenido:
+
+1. ¿Qué es y para que sirve RMarkdown?
+2. Primeros pasos: Crear un archivo `.Rmd`
+3. Sintaxis Markdown:
+  
+  3.1 Elementos de bloque:
+    - Encabezados
+    - Listas
+    - Citas
+    - Parrafos 
+
+---  
+## Contenido:
+
+  3.2 Elementos de línea:
+    - Énfasis 
+    - Expresiones matemáticas 
+    - Enlaces
+    - Código
+    - Comentar texto
+    - Imagen 
+---
+  
+
+class: chapter-slide
+
+# Empezamos!
+
+---
+
+# Título 1
+
+## Título 2
+
+Algo de código
+
+```{r}
+1 + 5
+```
+
+
+---
+
+.pull-left[<br><br><br><br><br><br><br>
+.center[
+# ¡Gracias! 
+]
+]
+
+.pull-right[<br>
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("css/xolo.png")
+```
+
+]

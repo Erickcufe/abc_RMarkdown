@@ -17,10 +17,10 @@
 }
 
 .title-slide h1 {
-  text-align: center;
   position: absolute;
+  text-align: center;
   bottom: 32%;
-  left: 0%;
+  left: 28%;
   color: #454647;
   font-weight: bold;
 }
@@ -42,7 +42,7 @@
 }
 
 .chapter-slide {
-  background-image: url("https://www.r-project.org/conferences/useR.png"), linear-gradient(to bottom, #B85232 85%, rgba(184, 82, 50) 95%) ;
+  background-image: url("css/avatar.png"), linear-gradient(to bottom, #B85232 85%, rgba(184, 82, 50) 95%) ;
   background-position: 10px 590px , center;
   background-size: 0px, 100% 100%, cover ;
 }
