@@ -1,0 +1,54 @@
+---
+title: "El ABC de RMarkdown"
+author: "Erick Cuevas Fernández<br>01 de agosto de 2022"
+output:
+  xaringan::moon_reader:
+    css: ["cdsb2022.css"]
+    self_contained: true
+    nature:
+      ratio: '16:9'
+---
+```{r xaringanExtra-clipboard, echo=FALSE}
+# No quitar! Es para que aparezca la opción copy code en los R chunks
+xaringanExtra::use_clipboard()
+```
+
+# ¿Qué es RMarkdown?
+
+## Alcances
+
+Contenido
+---
+class: chapter-slide
+
+# Capítulo 1
+
+
+---
+
+# Título 1
+
+## Título 2
+
+Algo de código
+
+```{r}
+1 + 5
+```
+
+
+---
+
+.pull-left[<br><br><br><br><br><br><br>
+.center[
+# ¡Gracias! 
+]
+]
+
+.pull-right[<br>
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("css/xolo.png")
+```
+
+]
+
