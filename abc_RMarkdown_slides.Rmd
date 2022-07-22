@@ -4,7 +4,7 @@ author: "Erick Cuevas Fernández<br>01 de agosto de 2022"
 output:
   xaringan::moon_reader:
     css: ["cdsb2022.css"]
-    self_contained: false
+    self_contained: true
     seal: true
     nature:
       ratio: '16:9'
@@ -16,13 +16,15 @@ output:
 xaringanExtra::use_clipboard()
 ```
 
+class: inverse
+
 .pull-right[<br>
 ```{r, echo=FALSE, out.width='80%', fig.align='center'}
 knitr::include_graphics("css/xolo.png")
 ```
 ]
 
-## Contenido:
+# Contenido:
 
 1. ¿Qué es y para que sirve RMarkdown?
 2. Primeros pasos: Crear un archivo `.Rmd`
@@ -32,37 +34,72 @@ knitr::include_graphics("css/xolo.png")
     - Encabezados
     - Listas
     - Citas
-    - Parrafos 
-
----  
-## Contenido:
-
-  3.2 Elementos de línea:
-    - Énfasis 
-    - Expresiones matemáticas 
-    - Enlaces
-    - Código
-    - Comentar texto
-    - Imagen 
+    - Párrafos 
 ---
-  
+class: inverse
+
+.pull-right[<br>
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("css/xolo.png")
+```
+]
+
+# Contenido:
+
+3.2 Elementos de línea:
+  - Énfasis 
+  - Expresiones matemáticas 
+  - Enlaces
+  - Código
+  - Comentar texto
+  - Imagen 
+---
 
 class: chapter-slide
 
 # Empezamos!
 
 ---
+class: inverse
 
-# Título 1
+# 1. ¿Qué es y para que sirve RMarkdown?
 
-## Título 2
+**Rmarkdown** se basa en el lenguaje *markdown* que sirve para convertir texto plano a formato HTML. Este tipo de archivo de archivo esta disponible en RStudio, y esto nos permite integrar código con texto. 
 
-Algo de código
+Puedes obtener los siguientes archivos de salida:
 
-```{r}
-1 + 5
+- PDF
+- HTML
+- Microsoft Word
+
+
+Con ello puedes generar presentaciones, libros, sitios web, manuales de paqueterías y documentos interactivos.
+
+---
+class: chapter-slide
+
+# Algunos usos
+
+---
+
+##Agregar en un informe la información de una localización
+
+```{r out.width='100%', fig.height=6, eval=require('leaflet')}
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(lat = 18.95, lng = -99.239, zoom = 13)
 ```
 
+
+---
+class: center
+
+## Poner la chicharronera (Fórmula cuadrática en un texto)
+
+Esto es la chicharronera dentro de un texto $$x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}$$
+
+Y puedo seguir describiendo lo que siga haciendo.
+
+$$\text{La Fórmula Cuadrática es }x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}$$
 
 ---
 
