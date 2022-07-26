@@ -103,6 +103,10 @@ $$\text{La Fórmula Cuadrática es }x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}$$
 .center[
 # Crear un archivo `.Rmd`
 ]
+
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/abrir_rmd.png")
+```
 ---
 .pull-left[<br><br><br><br><br><br><br>
 .center[
