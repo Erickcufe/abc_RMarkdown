@@ -73,8 +73,6 @@ Puedes obtener los siguientes archivos de salida:
 - Microsoft Word
 
 
-Con ello puedes generar presentaciones, libros, sitios web, manuales de paqueterías y documentos interactivos.
-
 ---
 class: chapter-slide
 
