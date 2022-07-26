@@ -102,7 +102,10 @@ Y puedo seguir describiendo lo que siga haciendo.
 $$\text{La Fórmula Cuadrática es }x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}$$
 
 ---
-
+.center[
+# Crear un archivo `.Rmd`
+]
+---
 .pull-left[<br><br><br><br><br><br><br>
 .center[
 # ¡Gracias! 
