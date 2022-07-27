@@ -66,7 +66,7 @@ Este contenido se basó en:
 
 ---
 
-# Preparar nuestras máquinas
+# Preparar nuestra sesión de R
 
 ```{r echo=TRUE, eval=FALSE}
 # Instalar desde el repositorio de CRAN
@@ -82,6 +82,7 @@ install.packages('tinytex')
 tinytex::install_tinytex()  # install TinyTeX
 ```
 
+Con RStudio en automático tenemos [**pandoc**](http://pandoc.org/) y [**knitr**](https://yihui.org/knitr/)
 
 ---
 class: inverse
@@ -98,6 +99,15 @@ Puedes obtener los siguientes archivos de salida:
 
 
 ---
+
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/how_work.png")
+```
+
+`.Rmd` es nuestro archivo editable y consta de metadata, texto y bloques de código. `Knit` convierte el `.Rmd` en `.md` (*Tejer*). `Pandoc` hace la introversión entre los distintos tipos de archivos de salida. 
+
+---
+
 class: chapter-slide
 
 # Algunos usos
@@ -122,6 +132,20 @@ Esto es la chicharronera dentro de un texto $$x = \frac {-b \pm \sqrt {b^2 - 4ac
 Y puedo seguir describiendo lo que siga haciendo.
 
 $$\text{La Fórmula Cuadrática es }x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}$$
+---
+.center[
+# Ejemplos de uso y páginas útiles
+]
+
+- [RPubs](https://rpubs.com)
+- [Generar correos personalizados](https://rmarkdown.rstudio.com/articles_mail_merge.html)
+- [Escribir artículos](https://elifesciences.org/labs/cad57bcf/composing-reproducible-manuscripts-using-r-markdown)
+  - [rticles](https://github.com/rstudio/rticles)
+- [Escribir Libros](https://bookdown.org/)
+  - [Escribir tesis](https://eddjberry.netlify.com/post/writing-your-thesis-with-bookdown/)
+- [Crear sitios web](https://github.com/seankross/postcards)
+
+
 
 ---
 .center[
