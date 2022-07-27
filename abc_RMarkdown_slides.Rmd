@@ -149,7 +149,7 @@ $$\text{La Fórmula Cuadrática es }x = \frac {-b \pm \sqrt {b^2 - 4ac}}{2a}$$
 
 ---
 .center[
-# Crear un archivo `.Rmd`
+# Crear un archivo `Rmd`
 ]
 
 ## Paso 1
