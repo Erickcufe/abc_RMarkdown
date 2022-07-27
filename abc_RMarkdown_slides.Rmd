@@ -165,6 +165,9 @@ knitr::include_graphics("img/abrir_rmd.png")
 knitr::include_graphics("img/rmd_op.png")
 ```
 ---
+# Listo, tenemos un archivo listo `Rmd`
+
+---
 .pull-left[<br><br><br><br><br><br><br>
 .center[
 # ¡Gracias! 
