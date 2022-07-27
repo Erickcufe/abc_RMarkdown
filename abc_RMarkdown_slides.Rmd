@@ -55,9 +55,33 @@ knitr::include_graphics("css/xolo.png")
   - Imagen 
 ---
 
-class: chapter-slide
+class: center
 
-# Empezamos!
+# Agradecimientos
+
+Este contenido se basó en:
+
+- [Advanced R Markdown Workshop rstudio::conf 2019](https://arm.rbind.io)
+- [R Markdown Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+
+---
+
+# Preparar nuestras máquinas
+
+```{r echo=TRUE, eval=FALSE}
+# Instalar desde el repositorio de CRAN
+install.packages("rmarkdown")
+
+# O también puedes instalar la versión en desarrollo
+if (!requireNamespace("devtools"))
+  install.packages('devtools')
+devtools::install_github('rstudio/rmarkdown')
+
+# Instalar la paquetería para poder compilar en LaTeX
+install.packages('tinytex')
+tinytex::install_tinytex()  # install TinyTeX
+```
+
 
 ---
 class: inverse
