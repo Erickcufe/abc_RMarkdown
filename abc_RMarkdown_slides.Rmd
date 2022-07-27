@@ -167,6 +167,10 @@ knitr::include_graphics("img/rmd_op.png")
 ---
 # Listo, tenemos un archivo listo `Rmd`
 
+```{r, echo=FALSE, out.width='80%', fig.align='center'}
+knitr::include_graphics("img/rmd.png")
+```
+
 ---
 .pull-left[<br><br><br><br><br><br><br>
 .center[
