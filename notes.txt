@@ -1,0 +1,13 @@
+https://bookdown.org/yihui/rmarkdown/installation.html
+https://stackoverflow.com/questions/40563479/relationship-between-r-markdown-knitr-pandoc-and-bookdown
+https://bookdown.org/yihui/rmarkdown-cookbook/rmarkdown-process.html
+
+https://pandoc.org/MANUAL.html#pandocs-markdown
+
+https://en.m.wikipedia.org/wiki/YAML#Syntax
+https://slides.yihui.org/2019-rstudio-conf-rmarkdown-workshop.html#27
+https://slides.yihui.org/2019-rstudio-conf-rmarkdown-workshop.html#1
+https://arm.rbind.io/days/day2/
+
+
+https://www.nature.com/collections/qghhqm/
