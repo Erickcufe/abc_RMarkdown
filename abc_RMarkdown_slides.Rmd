@@ -167,11 +167,263 @@ knitr::include_graphics("img/rmd_op.png")
 ---
 # Listo, tenemos un archivo listo `Rmd`
 
-```{r, echo=FALSE, out.width='80%', fig.align='center'}
+```{r, echo=FALSE, out.width='60%', fig.align='center'}
 knitr::include_graphics("img/rmd.png")
 ```
 
 ---
+# Estructura básica del RMarkdown
+
+**YAML**
+```yaml
+---
+title: "Bienvenido CDSB 2022"
+author: "EMB 2022"
+date: "2022-08-01"
+output: html_document
+---
+```
+
+Aquí podemos configurar nuestro archivo markdown. Básicamente aqui suceden todos los cambios en el formato, para hacer paginas web, diapositivas o informes.
+
+
+---
+# Estructura básica del RMarkdown
+
+**Markdown**
+````markdown
+Parrafo de R Markdown.
+
+Esto es un fragmento de código o "chunk":
+
+```{r}
+fit = lm(dist ~ speed, data = cars)
+b   = coef(fit)
+
+```
+
+La pendiente de la regresión es `r b[1]`.
+````
+---
+
+# Sintaxis básica. Encabezados.
+
+Encabezados de estilo Setext
+
+.pull-left[
+````markdown
+
+Título de nivel 1
+===================
+
+Título de nivel 2
+-------------------
+
+````
+]
+
+.pull-right[
+Título de nivel 1
+===================
+
+Título de nivel 2
+-------------------
+]
+
+---
+
+# Sintaxis básica. Encabezados.
+
+Encabezados de estilo ATX. Un encabezamiento de estilo ATX consta de uno a seis signos # y una línea de texto
+
+.pull-left[
+````markdown
+# Título de nivel 1
+
+## Título de nivel 2
+
+### Título de nivel 3
+
+#### Título de nivel 4
+````
+]
+
+.pull-right[
+# Título de nivel 1
+
+## Título de nivel 2
+
+### Título de nivel 3
+]
+---
+# Sintaxis básica. Citas en bloque.
+
+.pull-left[
+````markdown
+> Esto es una cita en bloque. Este
+> párrafo tiene dos líneas.
+>
+> 1. Esta es una lista dentro de una cita
+> 2. Segundo elemento
+````
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/quotes.png")
+```
+]
+
+---
+# Sintaxis básica. Citas en bloque.
+
+.pull-left[
+````markdown
+> Esto es una cita en bloque.
+>
+> > Cita en bloque, dentro de cita en bloque.
+````
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/quote_in.png")
+```
+]
+
+---
+# Sintaxis básica. Texto en bloque.
+
+Útil para cuando queremo ocupar sangrias especificas en el texto. 
+
+.pull-left[
+````markdown
+| Dijo el loco, y con noble melancolía
+| por las breñas del monte siguió trepando,
+| y al perderse en las sombras, aún repetía:
+| «¡Hay que vivir sembrando! ¡Siempre sembrando!...»
+|    Rafel Blanco Belmonte
+````
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/poem.png")
+```
+
+]
+---
+# Sintaxis básica. Listas.
+
+Para las listas puedes utilizar los siguientes símbolos: `*`, `+`, `-`, números y letras. ¿Qué le falta a la lista (lado izquierdo)? 
+
+.pull-left[
+
+```{r eval=FALSE}
+* Lista principal
+  + manzanas
+    - amarilla
+    - roja
+  + pera
+  + durazno
+```
+
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/list_apple.png")
+```
+]
+
+---
+# Sintaxis básica. Listas.
+
+**NOTA**: si quieres que se enumeren automaticamente usa `*.` en tus listas. Vamos a probarlo.
+
+.pull-left[
+
+```{r eval=FALSE}
+9)  Nueve
+10) Diez
+11) Once
+    i.  subuno
+    ii. subdos
+    iii. subtres
+```
+]
+
+.pull-right[
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/list_num.png")
+```
+    
+]
+
+---
+# Sintaxis básica. Listas.
+
+.pull-left[
+
+```{r eval=FALSE}
+- [ ] an unchecked task list item
+- [x] checked item 
+
+```
+
+```{r eval=FALSE}
+Definicion 1
+
+:   Definicion 1
+
+Termino 2 con *resaltado*
+
+:   Definicion 2
+
+        { algo de codigo, parte de Termino 2 }
+
+    Tercer parrafo de definicion 2.
+
+```
+]
+
+.pull-right[
+
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/list_check.png")
+```
+
+```{r, echo=FALSE, out.width='100%', fig.align='center'}
+knitr::include_graphics("img/list_adv.png")
+```
+  
+]
+---
+
+# Actividad
+
+1. Abre un `.rmd`.
+2. Intenta hacer una lista con dichos mexicanos famosos. 
+3. Compartenos tu resultado en HTML. 
+
+## Ejemplo
+
+```{r, echo=FALSE, out.width='70%', fig.align='center'}
+knitr::include_graphics("img/list_mex.png")
+```
+
+
+---
+
+# Sintaxis básica. Bloques de código.
+
+RMarkdown tiene la disponibilidad de "chunks"
+
+Vamos RStudio a ver como hacerlo!!!
+
+
+---
+
 .pull-left[<br><br><br><br><br><br><br>
 .center[
 # ¡Gracias! 
