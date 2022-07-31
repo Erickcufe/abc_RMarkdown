@@ -417,9 +417,34 @@ knitr::include_graphics("img/list_mex.png")
 
 # Sintaxis básica. Bloques de código.
 
-RMarkdown tiene la disponibilidad de "chunks"
+Puedes poner código entre tu texto con el símbolo del "acento al revés" en los extremos de tu código. 
 
-Vamos RStudio a ver como hacerlo!!!
+RMarkdown tiene la disponibilidad de "chunks", tiene la disponibilidad de lenguajes como: Python, SQL, Bash, Rcpp, Stan, JavaScript y CSS.
+
+Aquí puedes consultar la guia de referencia de RMarkdown: [https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+
+
+Vamos a RStudio a ver como hacerlo. Y vamos a aprender empezar con templates. 
+
+
+---
+# Elementos de línea. 
+
+- `*Cursiva*` genera *Cursiva*
+- `**Resaltada**` genera **Resaltada**
+- `***Resaltada Cursiva***` genera ***Resaltada Cursiva***
+- `[Nombre_Link](URL)` genera [Nombre_Link](https://github.com/ComunidadBioInfo)
+- `$z = \frac{1}{x} + 4$` genera $z = \frac{1}{x} + 4$
+
+¿Cómo hago comentario dentro de RMarkdown y cómo agrego una imagen?
+
+---
+
+# Actividad
+
+- Por equipos de repositorio. Generen en GitHub un repositorio en conjunto. Enlacen RStudio con GitHub.
+- Generen un archivo `.rmd` por cada participante en su proyecto de R.
+- Dentro de cada archivo cada uno va a hacer su **curriculum vitae**, lo mas resumido y a manera de ejercicio. Pueden basarse en **templados** como [https://github.com/mitchelloharawild/vitae](https://github.com/mitchelloharawild/vitae). 
 
 
 ---
